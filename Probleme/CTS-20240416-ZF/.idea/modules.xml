@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/20240416Flyweight/20240416Flyweight.iml" filepath="$PROJECT_DIR$/20240416Flyweight/20240416Flyweight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20240416Proxy.Sportiv/20240416Proxy.Sportiv.iml" filepath="$PROJECT_DIR$/20240416Proxy.Sportiv/20240416Proxy.Sportiv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CTS-20240416-ZF.iml" filepath="$PROJECT_DIR$/CTS-20240416-ZF.iml" />
+    </modules>
+  </component>
+</project>

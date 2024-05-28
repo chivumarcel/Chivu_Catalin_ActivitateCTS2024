@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CTS-BI-20240325ZI.iml" filepath="$PROJECT_DIR$/CTS-BI-20240325ZI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadFirstCode/HeadFirstCode.iml" filepath="$PROJECT_DIR$/HeadFirstCode/HeadFirstCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadFirstSingleton/HeadFirstSingleton.iml" filepath="$PROJECT_DIR$/HeadFirstSingleton/HeadFirstSingleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problema4Transport/Problema4Transport.iml" filepath="$PROJECT_DIR$/Problema4Transport/Problema4Transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Problema5UsiAutobuz/Problema5UsiAutobuz.iml" filepath="$PROJECT_DIR$/Problema5UsiAutobuz/Problema5UsiAutobuz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar06/Seminar06.iml" filepath="$PROJECT_DIR$/Seminar06/Seminar06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar06/builder/builder.iml" filepath="$PROJECT_DIR$/Seminar06/builder/builder.iml" />
+    </modules>
+  </component>
+</project>

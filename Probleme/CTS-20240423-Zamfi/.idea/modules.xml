@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CTS-20240423-Zamfi.iml" filepath="$PROJECT_DIR$/CTS-20240423-Zamfi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SportivObserver/SportivObserver.iml" filepath="$PROJECT_DIR$/SportivObserver/SportivObserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SportivStrategy/SportivStrategy.iml" filepath="$PROJECT_DIR$/SportivStrategy/SportivStrategy.iml" />
+    </modules>
+  </component>
+</project>

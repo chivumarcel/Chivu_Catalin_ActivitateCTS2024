@@ -1,0 +1,41 @@
+
+DESIGN PATTERNS STRUCTURALE
+
+### STATE
+- un anumit obiect se poate afla intr-o anumita stare, avem o colectie a starilor
+(intrerupator, pentru un bec // un bucatar care este la lucru sa in concediu)
+- fiecare stare are o metoda care schimba starea obiectului
+- fiecare stare are o metoda care face ceva in functie de starea obiectului
+- obiectul are implicit o stare la state (la strategy nu este obligatoriu sa aiba o stare implicita)
+- in functie de actiuni se va schimba starea obiectului
+- nu poti schimba starea din aprins in aprins (bec)
+
+Problema: bucatar, care nu poate executa mai multe actiuni in acelasi timp; poate face doar una din ele
+- daca bucatarul este liber, poate sa gateasca, daca deja gateste, trebuie sa dea altuia;
+
+
+Document text
+- normal, italic, bold, underline // nu avem state, pentru ca obiectul se poate afla in mai multe stari
+- aici avem un decorator; (trebuie sa avem stari disjuncte, nu exista loc de a avea mai multe stari in acelasi timp)
+-----
+
+Din actiunile sale i se schimba starea; nu poate sa faca mai multe actiuni in acelasi timp
+
+
+### COMMAND (un pic mai complex...)
+este folosit pentru implementarea loose coupling // decuplarea lansarii comenzii de executarea ei
+(cand se va executa si de catre cine, este alta problema)
+Exemplu: clientul comanda catre ospatar, ospatarul da comanda catre bucatar, bucatarul executa comanda (cand poate el)
+- ospatarul varsa comenzile catre executanti
+- clientul nu stie cine va executa comanda si cand va fi executata
+- trebuie sa avem neaparat cine anume executa comanda
+- comanda este un obiect care contine o metoda de executie
+- clientul este cel care initiaza comanda // comenzile sunt executate de un executant, sunt stocate de un invoker
+- invokerul este cel care stie cine va executa comanda
+
+La examen putem avea franturi de cod si sa spunem ce design pattern-uri incalca;
+
+Important de retinut: decuplare comanda de executie, si varsarea comenzilor catre executanti,
+dupa aceea trebuie sa goleasca comenzile // this.listaComenzi.clear();
+
+

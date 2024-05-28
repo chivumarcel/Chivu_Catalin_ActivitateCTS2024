@@ -1,0 +1,38 @@
+Problema 11. Cand un client vine la stadion...
+Rezolvare> Strategy design pattern
+participanti:
+- familia de verificari (verificare1, verificare2, verificare3)
+- jandarm - cine face verificarea (sau portarul)
+
+Portar
++ Verificare verificare;
++ set Verificare (verificare)
++ verifica suporter(String numeSuporter)
+
+- IStrategy - interfata // Verificator
+
+
+----------
+problema 12. anunturi catre toti clientii abonati la notificari // SPOR
+
+Rezolvare> Observer design pattern // asta pare simpla :)
+
+Observer
++primesteNotificare(String mesaj)
+
+Abonat
++ primesteNotificare(String mesaj)
+
+Subiect // clasa abstracta
++ adaugaObservatori(Observer abonat)
++ stergeObservatori(Observer abonat)
++ notificaObservatori(String mesaj)
+ListaObservatori<Observer> observatori;
+
+Sala
+
+String numeSala;
++trimiteNotificare(String mesaj)
++notificaFotbal();
++notificaVolei();
++notificaHandbal();

@@ -1,0 +1,5 @@
+10. Managerul stadionului dorește realizarea unui joc pentru meciurile care au loc pe stadionul sau.
+Doreste realizarea publicului din tribuna si doreste ca tribuna sa fie plina la fiecare meci.
+Pentru desenarea unei persoane in public este necesara salvarea informatiilor cu privire la dimensiunile acesteia:
+inaltime, latime, etc precum și informatii privind pozitia acestuia în tribuna sau culoarea tricoului purtat.
+Sa se realizeze modulul care realizeaza desenarea persoanelor in public cu un consum optim al memoriei.

@@ -1,0 +1,91 @@
+Statement of Work
+
+Congratulations on being selected to build our next-generation, Internet-based Weather
+Monitoring Station!
+The weather station will be based on our patent pending WeatherData object, which
+tracks current weather conditions (temperature, humidity, and barometric pressure). We’d
+like you to create an application that initially provides three display elements: current
+conditions, weather statistics, and a simple forecast, all updated in real time as the
+WeatherData object acquires the most recent measurements.
+Further, this is an expandable weather station. Weather-ORama wants to release an API
+so that other developers can write their own weather displays and plug them right in.
+We’d like for you to supply that API!
+Weather-O-Rama thinks we have a great business model: once the customers are hooked,
+we intend to charge them for each display they use. Now for the best part: we are going to
+pay you in stock options.
+We look forward to seeing your design and alpha application.
+Sincerely,
+Johnny Hurricane, CEO
+P.S. We are overnighting the WeatherData source files to you.
+
+----
+The Weather Monitoring application overview
+The three players in the system are the weather station (the physical device
+that acquires the actual weather data), the WeatherData object (that tracks the
+data coming from the Weather Station and updates the displays), and the
+display that shows users the current weather conditions.
+
+The WeatherData object knows how to talk to the physical Weather Station,
+to get updated data. The WeatherData object then updates its displays for the
+three different display elements: Current Conditions (shows temperature,
+humidity, and pressure), Weather Statistics, and a simple forecast.
+Our job, if we choose to accept it, is to create an app that uses the
+WeatherData object to update three displays for current conditions,
+weather stats, and a forecast.
+
+---
+The spec from Weather-O-Rama wasn’t all that clear, but we have to figure
+out what we need to do. So, what do we know so far?
+#1
+The WeatherData class has getter methods for three measurement values: temperature,
+humidity, and barometric pressure.
+getTemperature()
+getHumidity()
+getPressure()
+
+#2
+The measurementsChanged() method is called any time new weather measurement
+data is available. (We don’t know or care how this method is called; we just know that
+it is.)
+measurementsChanged()
+
+#3
+We need to implement three display elements that use the weather data: a current
+conditions display, a statistics display, and a forecast display. These displays must be
+updated each time WeatherData has new measurements.
+
+#4
+The system must be expandable — other developers can create new custom display
+elements and users can add or remove as many display elements as they want to the
+application. Currently, we know about only the initial three display types (current
+conditions, statistics, and forecast).
+
+###UTIL
+Pattern-ul Observer este un exemplu clasic de cuplare slabă. În acest pattern, ai două tipuri de obiecte:
+1) Subject (Subiectul): Acesta este obiectul care trimite notificări.
+În exemplul nostru, să ne imaginăm că subiectul este o stație meteorologică.
+
+2) Observers (Observatorii): Aceștia sunt obiectele care așteaptă să fie notificate.
+Să spunem că unul este o aplicație de vreme pentru smartphone, iar altul este un afișaj digital într-un parc local.
+
+Acum, să vedem cum funcționează cuplarea slabă:
+Stația meteorologică măsoară temperatura și umiditatea (subiectul).
+Afișajul digital și aplicația de pe smartphone sunt setate să "asculte" stația meteorologică (observatorii).
+Când stația meteorologică înregistrează o schimbare a vremii, ea doar anunță observatorii că există o schimbare.
+Nu îi trimite detalii specifice despre cum trebuie să răspundă, doar le dă informația actualizată.
+Afișajul și aplicația decid independent ce să facă cu informația.
+Afișajul poate arăta o schimbare de temperatură, în timp ce aplicația poate trimite o notificare push.
+Partea cheie aici este că stația meteorologică nu trebuie să știe nimic despre afișaj sau aplicație,
+în afară de faptul că ele "implementează" o interfață Observator.
+Nu le pasă dacă un observator este un telefon, un panou digital sau chiar ceva complet diferit, cum ar fi un sistem de irigații
+care pornește când plouă. Atâta timp cât observatorul poate "asculta" și răspunde la notificări, relația funcționează.
+
+În rezumat, cuplarea slabă în Pattern-ul Observer permite stației meteorologice să fie independentă de dispozitivele care folosesc datele sale.
+Dacă un nou dispozitiv, cum ar fi o stație de irigație, vrea să înceapă să primească date, o poate face fără ca stația meteorologică să fie modificată.
+Acest lucru face sistemul flexibil și ușor de întreținut sau extins.
+
+
+
+
+
+
